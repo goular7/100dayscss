@@ -1,0 +1,54 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+.frame {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+  background-color: #272C34;
+  color: #333;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.circle{
+  height: 180px;
+  width: 180px;
+  background-color: #7ddffc;
+  border-radius: 50%;
+}
+
+.sun-container{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-color: tomato;
+  animation: spin 1s linear infinite;
+}
+
+.sun{
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: #ffef00;
+}
+
+@keyframes spin{
+  100%{
+    transform: rotate(360deg);
+  }
+
+}
